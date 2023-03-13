@@ -286,3 +286,9 @@ footer h3 {
     background-color: white;
 }
 
+footer p:hover {
+    padding-left: 30px;
+    width: 120px;
+    transform: translateY(-4px);
+    background-color: rgba(255, 255, 255, 0.386);
+}
