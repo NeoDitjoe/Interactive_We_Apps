@@ -272,8 +272,18 @@ footer {
 }
 
 .contact {
+    height: 360px;
     position: relative; left: 150px;
     padding-bottom: 30px;
+}
+
+footer aside{
+    position: relative; left: 150px;
+    width: 50px;
+}
+
+footer h4 {
+    white-space:nowrap;
 }
 
 footer h3 {
@@ -286,9 +296,16 @@ footer h3 {
     background-color: white;
 }
 
+
 footer p:hover {
     padding-left: 30px;
     width: 120px;
     transform: translateY(-4px);
     background-color: rgba(255, 255, 255, 0.386);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative; top: 205px; left: 90px;
 }
