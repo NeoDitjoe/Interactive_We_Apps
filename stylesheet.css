@@ -5,6 +5,7 @@
 }
 
 body {
+    border: solid;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 30px;
     background-color: rgba(255, 166, 0, 0.162);
@@ -308,4 +309,35 @@ form {
     display: flex;
     flex-direction: column;
     position: relative; top: 205px; left: 90px;
+}
+
+@media only and  grid display grid display colums 
+grid auto rows value auto ,grid areas, 
+
+nav {
+    grid area
+}
+
+@media only screen and (max-width:321px) {
+    nav{
+        transform:scale(0.2) ;
+        position: relative; right: 114px; bottom: 112px;
+    }
+    h1{
+        position: relative; bottom: 560px;
+        font-size: 200px;
+    }
+
+    nav li {
+        size: 900px;
+    }
+
+}
+
+@media only screen and (max-width:2600px){
+    .container {
+        transform: scale(0.75);
+        position: relative; right: 133px;
+        
+    }
 }
