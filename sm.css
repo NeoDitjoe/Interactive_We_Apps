@@ -24,6 +24,20 @@ a {
     color: blue;
 }
 
+nav li {
+    white-space: nowrap;
+}
+
+nav li:hover {
+    font-size: 200%;
+    transform: translateY(-10%);
+    background-color: rgba(244, 189, 7, 0.409);
+    border-radius: 50px;
+    width: 20%;
+    text-align: center;
+
+}
+
 nav{
     padding-top: 0.8em;
     height: 3em;
@@ -92,6 +106,8 @@ main {
 
 
 #education-section h2 {
+    margin-top:8%;
+    margin-bottom:15%;
     border-end-end-radius: 50px;
     border-start-end-radius: 50px;
     color: orange;
@@ -104,6 +120,7 @@ main {
 
 .kliptown-section p{
     padding-left: 40%;
+    
 }
 
 .kliptown-section h3 {
@@ -113,7 +130,7 @@ main {
     border-start-start-radius: 50px;
     border-end-start-radius: 50px;
     color: white;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.842);
     width: 70%;
     white-space: nowrap;
     font-size: 140%;
@@ -127,11 +144,11 @@ main {
 .simplilearn-section h3 {
     padding-left: 24%;
     width:67%; 
-    margin-top: 3%;
+    margin-top: 15%;
     border-end-end-radius: 50px;
     border-start-end-radius: 50px;
     color: white;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.842);
     white-space: nowrap;
     font-size: 140%;
 }
@@ -143,17 +160,18 @@ main {
 .codespace-section h3 {
     padding-left: 2%;
     margin-left: 25%;
-    margin-top: 3%;
+    margin-top: 15%;
     border-start-start-radius: 50px;
     border-end-start-radius: 50px;
     color: white;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.842);
     width: 75%;
     white-space: nowrap;
     font-size: 140%;
 }
 
 #experience-section h2 {
+    margin-top: 15%;
     font-size: 220%;
     text-align: end;
     padding-right: 2%;
@@ -168,19 +186,19 @@ main {
 .experience-section h3 {
     padding-left: 10%;
     width:47%; 
-    margin-top: 3%;
+    margin-top: 15%;
     border-end-end-radius: 50px;
     border-start-end-radius: 50px;
     color: white;
-    background-color: orange;
+    background-color:rgba(255, 166, 0, 0.842);
     white-space: nowrap;
 }
 
 .jetline-section h3 {
     color: white;
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.842);
     width: 70%;
-    margin-top: 5%;
+    margin-top: 15%;
     text-align: center;
     border-radius: 50px;
 }
@@ -190,7 +208,8 @@ main {
 }
 
 .credico-section h3 {
-    background-color: orange;
+    margin-top: 15%;
+    background-color: rgba(255, 166, 0, 0.842);
     color: white;
     width: 70%;
     border-radius: 50px;
@@ -203,8 +222,24 @@ main {
     margin-left: 45%;
 }
 
+#skills-section h2 {
+    margin-top: 15%;
+    background-color: white;
+    color: orange;
+    font-size: 220%;
+    border-start-start-radius: 50px;
+    border-end-start-radius: 50px;
+
+}
 
 
+
+text-align: end;
+padding-right: 2%;
+
+width: 81%;
+color: orange;
+background-color: white;
 
 
 
