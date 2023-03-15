@@ -20,7 +20,7 @@ nav::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
-    width: 470%; height: 100%;
+    width: 470%; height: ;
     height: 500px;
     background-image: url('images/a7.gif');
     opacity: 0.34;
