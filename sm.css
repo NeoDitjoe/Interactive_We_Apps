@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgba(255, 166, 0, 0.313);
+    background-color: rgba(255, 166, 0, 0.279);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-x: hidden;
     border: solid;
@@ -32,8 +32,7 @@ nav li:hover {
     font-size: 111%;
     transform: translateY(-10%);
     background-color: rgba(244, 189, 7, 0.409);
-    border-radius: 50px;
-    width: 25%;
+    
     text-align: center;
 
 }
@@ -102,7 +101,6 @@ header div:first-of-type {
 }
 
 header div:nth-child(2) {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 2.6em;
     text-align: center;
     font-size: 1.5em;
@@ -325,4 +323,231 @@ form {
 button {
     background-color: rgba(0, 0, 255, 0.468);
     color: rgb(248, 248, 250);
+}
+
+@media only screen and (min-width:424px){
+     header h1 {
+        font-size: 400%;
+        position: relative; bottom: 17%;
+     }
+
+     header div:first-of-type {
+        background-size: cover;
+        background-position: 100%;
+        height: 350px;
+
+     }
+
+     img {
+        height: 95%;
+        width: 50%;
+        margin-top: 40%;
+     }
+
+     header h2 {
+        margin-top: 30%;
+        font-size: 230%;
+     }
+
+     #education-section h2 {
+        font-size: 300%;
+     }
+
+     .kliptown-section h3 {
+        font-size: 190%;
+     }
+
+
+     .simplilearn-section h3 {
+        font-size: 190%;
+     }
+
+     .codespace-section h3 {
+        font-size: 190%;
+     }
+
+     #experience-section h2 {
+        font-size: 300%;
+     }
+
+     #skills-section h2 {
+        font-size: 300%;
+     }
+
+     footer h2 {
+        width: 90%;
+        margin-left: 5%;
+     }
+
+     main h3 {
+        font-size: 150%;
+     }
+
+     main p {
+        font-size: 120%;
+     }
+
+     footer p {
+        font-size: 110%; 
+     }
+
+
+
+}
+
+@media only screen and (min-width:526px){
+
+    img {
+        height: 110%;
+        margin-right: 10%;
+    }
+
+    header h1 {
+        position: relative;bottom: 30%;
+        font-size: 500%;
+    }
+
+    header h2 {
+        margin-top: 40%;
+        font-size: 290%;
+    }
+
+    header p {
+        font-size: 90%;
+    }
+
+    #education-section h2 {
+        font-size: 350%;
+        margin-bottom: 6%;
+    }
+
+    .simplilearn-section h3 {
+        margin-top: 5%;
+        width: 50%;
+        padding-left: 14%;
+    }
+
+    .codespace-section h3{
+        margin-top: 5%;
+    }
+
+    #experience-section h2{
+        font-size: 350%;
+        margin-top: 8%;
+    }
+
+    #skills-section h2 {
+        font-size: 350%;
+
+    }
+
+    #skills-section {
+        margin-top: 0%;
+    }
+
+
+    .jetline-section h3 {
+        margin-left: 6%;       
+    }
+    .credico-section h3 {
+        margin-left: 26%;
+    }
+
+    footer h2 {
+        font-size: 230%;
+    }
+}
+
+@media only screen and (min-width:674px) {
+
+    header h1 {
+        font-size: 620%;
+    }
+
+    img {
+        height:120%;
+        width: 40%;
+    }
+    footer h2 {
+        font-size: 310%;
+    }
+
+
+    #contact-details-section {
+        flex-direction: row;
+    }
+
+    form {
+        position: relative; right: 50%; bottom: 8%;
+        width:100% ;
+    }
+
+    
+}
+
+@media only screen and (min-width:768px) {
+    img {
+        margin-left: 5%;
+        position: relative; bottom: 20%;
+    }
+    
+
+    .kliptown-section {
+        margin-left: 30%;
+    }
+
+    .simplilearn-section {
+        margin-top: -12%;
+        
+    }
+
+    .simplilearn-section h3 {
+        padding-left: 25%; 
+    }
+
+    .codespace-section {
+        margin-top: -12%;
+    }
+
+    .codespace-section h3 {
+        margin-left: 51%;
+        width: 49%;
+    }
+    
+    .jetline-section {
+        width: 70%;
+    }
+
+    .credico-section {
+        width: 70%;
+        margin-left: 20%;
+
+    }
+
+}
+
+@media only screen and (min-width:1024px) {
+    header h1 {
+        margin-left: 10%;
+        position: relative; bottom: 50%;
+    }
+
+    img {
+        position: relative; bottom: 50%;
+        height: 150%;
+        width: 30%;
+        margin-left: 30%;
+    }
+
+    header div:nth-child(2) {
+        width: 63%;
+        position: relative; bottom: 26%;
+
+    }
+
+    header h2 {
+        font-size: 366%;
+    }
+
+   
 }
