@@ -542,7 +542,7 @@ button {
 
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:1000px){
     header h1 {
         margin-left: 10%;
         position: relative; bottom: 50%;
@@ -612,6 +612,10 @@ button {
         margin-top: 5%;
     }
 
+    .codespace-section {
+        position: relative;top: 4em;
+    }
+
 
 
 
@@ -641,14 +645,14 @@ button {
     }
 
     header aside:first-of-type {
-
+        position: relative;left: 0.5em;
     }
 
       
     
     img {
         border-radius: 60px;
-        height: 700px;
+        height: 710px;
         width: 500px;
         position: relative; bottom: 35%;
         margin-right: 50%;
@@ -676,14 +680,14 @@ button {
     }
     
     #education-section h2 {
-        position: relative; bottom: 0.55em;
+        position: relative; bottom: 0.95em;
         width: 8.9em;
         font-size: 65px;
     }
 
     .kliptown-section h3 {
         margin-left: 0%;
-        margin-top: -10%;
+        margin-top: -13%;
     }
 
     .kliptown-section p {
@@ -707,6 +711,93 @@ button {
         position: relative;right: 10.3em; top: 1.7em;
     }
 
+    .codespace-section {
+        margin-top: -14em;
+    }
+
+    #experience-section {
+        margin-top: 15%;
+    }
+
+    #experience-section h2{
+        padding-left: 4.5em;
+        width: 11.7em;
+        position: relative; bottom: 1.35em;
+        font-size: 65px;
+    }
+
+    .jetline-section h3 {
+        width: 15em;
+        position: relative; bottom: 7em;
+    }
+
+    .jetline-section p {
+        position: relative; bottom: 8em; right: 4em;
+    }
+
+    .credico-section h3 {
+        width: 15.3em;
+        margin-left: -10em; 
+        margin-top: -3em;
+
+    }
+
+    .credico-section p {
+        margin-left: -13%;
+    }
+
+    main section:nth-child(3) {
+        position: relative; bottom: 30%;
+
+    }
+
+    #skills-section{
+        width: 90%;
+        font-size: 1.3em;
+        margin-left: 10%;
+        
+    }
+    main {
+        margin-bottom: -20%;
+    }
+
+    footer h2 {
+        width: 17em;
+        margin-left: 20%;
+    }
+
+    .contacts-section{
+        font-size: 1.4em;
+        margin-top: -5%;
+    }
+
+    form {
+        font-size: 1.7em;
+        margin-top: -20%;
+    }
+
+    textarea, label, input, select, button{
+        font-size: 0.8em;
+        margin-right:10em ;
+    }
+
+ 
 
 
+}
+@media only screen and (min-width:1520px) {
+    header div:nth-child(2) {
+        margin-top: -2em;
+    }
+
+    #education-section {
+        margin-top: 10em;
+    }
+}
+
+@media only screen and (min-width:1644px) {
+
+  #education-section {
+    font-size: 1.3em;
+  }
 }
