@@ -29,11 +29,11 @@ nav li {
 }
 
 nav li:hover {
-    font-size: 111%;
-    transform: translateY(-10%);
+
+    transform: translatey(-20%);
     background-color: rgba(244, 189, 7, 0.409);
     
-    text-align: center;
+    
 
 }
 
