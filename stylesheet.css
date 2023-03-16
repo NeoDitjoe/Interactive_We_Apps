@@ -1,61 +1,70 @@
-.container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 200%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    border: solid;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgba(255, 166, 0, 0.162);
-   
-    
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    border: solid;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nav"
+    "header"
+    "main"
+    "footer";
 
-nav {
-    position: relative; width: 300px; height: 300px;
-}
-
-nav::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 470%; height: ;
-    height: 500px;
-    background-image: url('images/a7.gif');
-    opacity: 0.34;
-    background-size: cover;
-    background-position-y: -250px;
-    z-index: -1;
-    
-}
-
-h1 {
-    padding-left: 100px;
-    position: relative;bottom: 500px;
-    font-size: 140px;
-}
-
-nav h4 {
-    color: white;
-    font-size: 45px;
-    position: relative;  left: 870px; bottom: 40px;
-}
-
-nav li {
-    list-style-type:none;
-    font-size: 20px;
-    position: relative;  left: 825px; bottom: 100px;
-    padding: 15px;
-}
-
-nav li:hover {
-    transform: translateY(-8px);
-    background-color: rgba(255, 255, 255, 0.386);
 }
 
 a {
     color: blue;
+}
+
+nav li {
+    z-index: 1;
+    white-space: nowrap;
+}
+
+nav li:hover {
+
+    transform: translatey(-20%);
+    background-color: rgba(244, 189, 7, 0.409);
+    
+    
+
+}
+
+nav{
+    padding-top: 0.8em;
+    height: 3em;
+    grid-area: nav;
+
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header {
+    grid-area:header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+header aside:nth-child(2) {
+    color: orange;
+    animation-name: fall;
+    animation-duration: 1.7s;
+    animation-iteration-count: 1;
 }
 
 @keyframes fall {
@@ -67,13 +76,6 @@ a {
     }
 }
 
-.ditjoe {
-    color: orange;
-    position: relative; right: 50px;
-    animation-name: fall;
-    animation-duration: 1.7s;
-    animation-iteration-count: 1;
-}
 
 @keyframes falls {
     from {
@@ -85,376 +87,1087 @@ a {
 }
 
 
-.neo {
+header aside:first-child{
     animation-name: falls;
     animation-duration: 1.7s;
 }
 
+header div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url('images/q2.jpg');
+    background-size: cover;
+    height: 250px;
+}
+
+header div:nth-child(2) {
+    margin-top: 2.6em;
+    text-align: center;
+    font-size: 1.5em;
+}
 
 img {
-    height:700px;
-    width: 500px;
-    border:solid;
-    border-radius: 60px;
-    border-width: 0px;
-    position: relative; left: 830px; top: 50px;
-    z-index: 1;
-    
+    margin-top:4em;
+    width: 170px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+header h1 {
+    padding-left: 5%;
+    padding-top: 20%;
+    font-size: 270%;
+}
+
+header p:first-child {
+    font-size: 160%;
+}
+
+header p {
+    font-size: 0.75em;
+}
+
+main {
+    margin-top: 5%;
+    grid-area:main;
+
 }
 
 
 
-
-
-header {
-    position: relative; bottom: 540px;
-    height: 880px;
-
-}
-
-.web{
-    font-size: 92px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-}
-
-.intro {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    position: relative;
-    max-width: 40em;
-    line-height: 1.3;
-}
-
-.webp {
-    
-    position: relative; bottom:510px;
-    margin-left: 50px;
-}
-
-.edu {
-    padding-right: 20px;
+#education-section h2 {
+    margin-top:8%;
+    margin-bottom:15%;
     border-end-end-radius: 50px;
     border-start-end-radius: 50px;
-    font-size: 65px;
     color: orange;
-    background-color:white;
-    width: 550px;
-    text-align:end;
-    position: relative; bottom: 40px;
-    margin-left: -50px;
-}
-
-
-
-p {
-    font-size: large;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.inst {
-    border-radius: 50px;
-    padding-left: 20px;
-    font-size: 25px;
-    color: white;
-    background-color: orange;
-    width: 430px;
-    position: relative;bottom: 80px;
-    margin-left: 349px;
-}
-
-.nsc {
-    margin-left: 390px;
-    position: relative; bottom: 100px ;
-}
-
-.sl {
-    padding-right: 10px;
-    border-end-end-radius: 50px;
-    border-start-end-radius: 50px;
+    background-color: white;
+    width: 81%;
+    font-size: 220%;
     text-align: end;
-    width: 360px;
-    font-size: 25px;
-    color: white;
-    background-color: orange;
-    position: relative;bottom: 180px;
-    margin-left: -50px;
+    padding-right: 2%;
 }
 
-.bus {
-    position: relative; bottom: 200px ; 
-}
-
-.code {
-    padding-left: 20px;
-    width: 470px;
-    border-radius: 50px;
-    font-size: 25px;
-    position: relative;bottom: 260px;
-    color: white;
-    background-color: orange;
-    position: relative; bottom: 280px;
-    margin-left: 350px;
-}
-
-.cs {
-    padding-left: 385px;
-    position: relative; bottom: 300px;
-}
-
-
-
-
-
-
-section {
-    position: relative;bottom: 540px;
-
-    width: 1403.6px;
-     
-}
-
-.exp {
-    padding-right: 20px;
-    border-end-end-radius: 50px;
-    border-start-end-radius: 50px;
-    font-size: 65px;
-    color: orange;
-    background-color:white;
-    width: 658px;
-    text-align:end;
-    position: relative; right: 00px; bottom: 40px;
+.kliptown-section p{
+    padding-left: 40%;
     
 }
 
-.jet {
-    color: white;
-    background-color: orange;
-    font-size: 25px;
-    border-radius: 50px;
-    text-align: center;
-    width: 350px;
-    position: relative; bottom: 60px; left: 135px;
-}
-
-.fin {
-    padding-left: 150px;
-    position: relative; bottom: 60px; 
-}
-
-.cre {
-    text-align: center;
-    border-radius: 50px;
-    font-size: 25px;
-    width: 350px;
-    color: white;
-    background-color: orange;
-    position: relative;left: 135px;
-}
-
-.age {
-    padding-left: 150px;
-}
-
-section {
-    height: 580px;
-    display: flex;
-    flex-direction: row;
-
-}
-
-
-
-.skills{
-
+.kliptown-section h3 {
+    padding-left: 3%;
+    margin-left: 30%;
+    margin-top: 3%;
     border-start-start-radius: 50px;
     border-end-start-radius: 50px;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.842);
+    width: 70%;
+    white-space: nowrap;
+    font-size: 140%;
+}
+
+.simplilearn-section p{
+    margin-left: 5%;
+}
+
+
+.simplilearn-section h3 {
+    padding-left: 24%;
+    width:67%; 
+    margin-top: 15%;
+    border-end-end-radius: 50px;
+    border-start-end-radius: 50px;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.842);
+    white-space: nowrap;
+    font-size: 140%;
+}
+
+.codespace-section p{
+    padding-left: 50%;
+}
+
+.codespace-section h3 {
+    padding-left: 2%;
+    margin-left: 25%;
+    margin-top: 15%;
+    border-start-start-radius: 50px;
+    border-end-start-radius: 50px;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.842);
+    width: 75%;
+    white-space: nowrap;
+    font-size: 140%;
+}
+
+#experience-section h2 {
+    margin-top: 15%;
+    font-size: 220%;
+    text-align: end;
+    padding-right: 2%;
+    border-end-end-radius: 50px;
+    border-start-end-radius: 50px;
+    width: 81%;
+    color: orange;
+    background-color: white;
+
+}
+
+.experience-section h3 {
+    padding-left: 10%;
+    width:47%; 
+    margin-top: 15%;
+    border-end-end-radius: 50px;
+    border-start-end-radius: 50px;
+    color: white;
+    background-color:rgba(255, 166, 0, 0.842);
+    white-space: nowrap;
+}
+
+.jetline-section h3 {
+    color: white;
+    background-color: rgba(255, 166, 0, 0.842);
+    width: 70%;
+    margin-top: 15%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.jetline-section p {
+    margin-left: 18%;
+}
+
+.credico-section h3 {
+    margin-top: 15%;
+    background-color: rgba(255, 166, 0, 0.842);
+    color: white;
+    width: 70%;
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 30%;
+
+}
+
+.credico-section p {
+    margin-left: 45%;
+}
+
+#skills-section h2 {
+    padding-left: 3%;
+    margin-left: 30%;
+    margin-top: 15%;
     background-color: white;
     color: orange;
-    font-size: 65px;
-    width: 600px;
-    padding-left: 120px;
-    position: relative; left: 25px; top: 60px;
+    font-size: 220%;
+    border-start-start-radius: 50px;
+    border-end-start-radius: 50px;
+
 }
+
+#skills-section ul {
+    margin-left: 50%;
+}
+
+p {
+    margin-top: 5%;
+}
+
+
+
+
+
 
 footer {
-    width:1403.7px;
-    position: relative;bottom: 840px;
-    display: flex;
-    flex-direction: row;
-    height: 400px;
-    font-size: 22px;
-}
-
-.contact {
-    position: relative; left: 150px;
-
+    background-color: rgba(255, 166, 0, 0.176);
+    grid-area:footer;
+    margin-top: 5%;
 
 }
 
-footer aside{
-    position: relative; left: 150px;
-    width: 50px;
-}
-
-footer h4 {
-    white-space:nowrap;
-}
-
-footer h3 {
-    padding-right: 200px;
-    border-radius: 50px;
-    position: relative; left: 115px;
-    padding-left: 183px;
-    font-size: 65px;
+footer h2 {
     color: orange;
     background-color: white;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 220%;
 }
 
+#contact-details-section {
+    margin-top: 10%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
 
-footer p:hover {
-    padding-left: 30px;
-    width: 120px;
-    transform: translateY(-4px);
-    background-color: rgba(255, 255, 255, 0.386);
+}
+
+#contact-details-section p:hover {
+    font-size: 111%;
+    transform: translateY(-10%);
+    background-color: rgba(244, 189, 7, 0.409);
+    border-radius: 50px;
+    width: 25%;
+    text-align: center;
+
+
+}
+
+.contacts-section {
+    margin-left: 5%;
 }
 
 form {
+    margin-left: 45%;
+    margin-top: 10%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    position: relative; top: 205px; left: 90px;
+
 }
 
+button {
+    background-color: rgba(0, 0, 255, 0.468);
+    color: rgb(248, 248, 250);
+}
+
+@media only screen and (min-width:424px){
+     header h1 {
+        font-size: 400%;
+        position: relative; bottom: 17%;
+     }
+
+     header div:first-of-type {
+        background-size: cover;
+        background-position: 100%;
+        height: 350px;
+
+     }
+
+     img {
+        height: 95%;
+        width: 50%;
+        margin-top: 40%;
+     }
+
+     header p:first-child {
+        margin-top: 30%;
+        font-size: 230%;
+     }
+
+     #education-section h2 {
+        font-size: 300%;
+     }
+
+     .kliptown-section h3 {
+        font-size: 190%;
+     }
+
+
+     .simplilearn-section h3 {
+        font-size: 190%;
+     }
+
+     .codespace-section h3 {
+        font-size: 190%;
+     }
+
+     #experience-section h2 {
+        font-size: 300%;
+     }
+
+     #skills-section h2 {
+        font-size: 300%;
+     }
+
+     footer h2 {
+        width: 90%;
+        margin-left: 5%;
+     }
+
+     main h3 {
+        font-size: 150%;
+     }
+
+     main p {
+        font-size: 120%;
+     }
+
+     footer p {
+        font-size: 110%; 
+     }
 
 
 
+}
 
-media only screen and (min-width:319px) {
+@media only screen and (min-width:526px){
+
+    img {
+        height: 110%;
+        margin-right: 10%;
+    }
+
+    header h1 {
+        position: relative;bottom: 30%;
+        font-size: 500%;
+    }
+
+    header p:first-child {
+        margin-top: 40%;
+        font-size: 290%;
+    }
+
+    header p {
+        font-size: 90%;
+    }
+
+    #education-section h2 {
+        font-size: 350%;
+        margin-bottom: 6%;
+    }
+
+    .simplilearn-section h3 {
+        margin-top: 5%;
+        width: 50%;
+        padding-left: 14%;
+    }
+
+    .codespace-section h3{
+        margin-top: 5%;
+    }
+
+    #experience-section h2{
+        font-size: 350%;
+        margin-top: 8%;
+    }
+
+    #skills-section h2 {
+        font-size: 350%;
+
+    }
+
+    #skills-section {
+        margin-top: 0%;
+    }
+
+
+    .jetline-section h3 {
+        margin-left: 6%;       
+    }
+    .credico-section h3 {
+        margin-left: 26%;
+    }
+
+    footer h2 {
+        font-size: 230%;
+    }
+}
+
+@media only screen and (min-width:674px) {
+
+    header h1 {
+        font-size: 620%;
+    }
+
+    img {
+        height:120%;
+        width: 40%;
+    }
+    footer h2 {
+        font-size: 310%;
+    }
+
+
+    #contact-details-section {
+        flex-direction: row;
+    }
+
+    form {
+        position: relative; right: 50%; bottom: 8%;
+        width:100% ;
+    }
 
     
-    nav{
-        transform:scale(0.2) ;
-        position: relative; right: 114px; bottom: 112px;
+}
+
+@media only screen and (min-width:730px) {
+    img {
+        margin-left: 5%;
+        position: relative; bottom: 20%;
     }
-    h1{
-        position: relative; bottom:300px; left: 600px;
-        font-size: 130px;
+    
+
+    .kliptown-section {
+        margin-left: 30%;
     }
 
-    nav h4 {
-        display: none;
+    .simplilearn-section {
+        margin-top: -12%;
+        
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        font-size: 20px;
-        position: relative; bottom: 100px;
-        padding: 15px;
+    .simplilearn-section h3 {
+        padding-left: 25%; 
     }
+
+    .codespace-section {
+        margin-top: -12%;
+    }
+
+    .codespace-section h3 {
+        margin-left: 51%;
+        width: 49%;
+    }
+    
+    .jetline-section {
+        width: 70%;
+    }
+
+    .credico-section {
+        width: 70%;
+        margin-left: 20%;
+
+    }
+
+    header p:first-of-type {
+        font-size: 450%;
+    }
+
+
+
+
+
+
+
+    
+
+}
+
+@media only screen and (min-width:1000px){
+    header h1 {
+        margin-left: 10%;
+        position: relative; bottom: 50%;
+    }
+
+    img {
+        position: relative; bottom: 50%;
+        height: 150%;
+        width: 30%;
+        margin-left: 30%;
+    }
+
+    header div:nth-child(2) {
+        width: 63%;
+        position: relative; bottom: 26%;
+
+    }
+
+    header p:first-child {
+        font-size: 410%;
+    }
+
+    header {
+        margin-bottom: -29%;
+    }
+
+    main {
+        margin-top: -300;
+    }
+
+    footer {
+        margin-top: 0%;
+    }
+
+    #education-section h2 {
+        width: 60%;
+    }
+    #experience-section h2 {
+        width: 60%;
+        text-align: center;
+    }
+
+    .simplilearn-section h3 {
+        padding-left: 32%;
+    }
+
+    .jetline-section p {
+        margin-left: 24%;
+    }
+
+    .jetline-section h3 {
+        width: 55%;
+    }
+
+    .credico-section p {
+        margin-right: 24%;
+    }
+
+    .credico-section h3 {
+        width: 55%;
+    }
+
+    #skills-section h2 {
+        margin-left: 42.9%;
+        width: 57%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .codespace-section {
+        position: relative;top: 4em;
+    }
+
+
+
 
 
 
 
    
-
-
 }
 
-@media only screen and (min-width:2451px){
+@media only screen and (min-width:1380px) {
+
+    nav li {
+        font-size: 2.3em;
+    }
+
+    header div:first-of-type {
+        height: 500px;
+        margin-top: 2%;
+        background-image:url('images/quu.png');
+        
+    }
+
+    header h1 {
+        margin-top: -1.8%;
+        font-size: 8em;
+        margin-left: 45%;
+    }
+
+    header aside:first-of-type {
+        position: relative;left: 0.5em;
+    }
+
+      
     
-    nav {
-        transform: scale(1.75);
-        position: relative; left: 146px; top: 140px;
-
-    }
-    header, section {
-
-        width: 1369px; 
-        transform: scale(1.8);
-        position: relative;top: 100px; left: 584px;
+    img {
+        border-radius: 60px;
+        height: 710px;
+        width: 500px;
+        position: relative; bottom: 35%;
+        margin-right: 50%;
     }
 
-
-    .skills {
-        width: 546px;
+    header p:first-of-type {
+        font-size: 4.3em;
+        margin-right: 0.5em;
     }
 
-    footer {
-
-    
-    }
-    
-
-    section {
-        position: relative; top: 600px;
-
+    header p:nth-child(2) {
+        margin-top: -1%;
+        width:40em;
+        position:relative;left: 8%;
+        font-size: 0.75em;
+        
     }
 
-
-    .hr {
-        display: none;
+    p , h1 {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
-    footer {
-        position: relative;top: 450px;
-        width: 1320px;
-        padding-left: 390px;
-        transform: scale(1.8);
-    }
-}
-media only screen and (min-width:2451px){
-    
-    nav {
-        transform: scale(1.75);
-        position: relative; left: 146px; top: 140px;
-
-    }
-    header, section {
-
-        width: 1369px; 
-        transform: scale(1.8);
-        position: relative;top: 100px; left: 584px;
-    }
-
-
-    .skills {
-        width: 546px;
-    }
-
-    footer {
-
-    
+    header div:nth-child(2) {
+        margin-top:0.2%;
     }
     
+    #education-section h2 {
+        position: relative; bottom: 0.95em;
+        width: 8.9em;
+        font-size: 65px;
+    }
 
+    .kliptown-section h3 {
+        margin-left: 0%;
+        margin-top: -13%;
+    }
 
-
-
-
-    
-
-    section {
-        position: relative; top: 600px;
+    .kliptown-section p {
+      position: relative; bottom: 1em; right: 20em;
 
     }
 
+    .simplilearn-section h3 {
+        position: relative; top: 1em;
+        padding-left: 15%;
+        width: 28%;
 
-    .hr {
-        display: none;
     }
 
-    footer {
-        position: relative;top: 450px;
-        width: 1320px;
-        padding-left: 390px;
-        transform: scale(1.8);
+    .simplilearn-section p {
+        position: relative; bottom: 1em;
+    }
+
+    .codespace-section h3 {
+        z-index: -1;
+        position: relative;right: 9.8em; top: 1.7em;
+    }
+
+    .codespace-section {
+        margin-top: -14em;
+    }
+
+    .codespace-section p {
+        position: relative; right: 18%;
+    }
+
+    #experience-section {
+        margin-top: 15%;
+    }
+
+    #experience-section h2{
+        padding-left: 4.5em;
+        width: 11.7em;
+        position: relative; bottom: 1.35em;
+        font-size: 65px;
+    }
+
+    .jetline-section h3 {
+        width: 15em;
+        position: relative; bottom: 7em;
+    }
+
+    .jetline-section p {
+        position: relative; bottom: 8em; right: 4em;
+    }
+
+    .credico-section h3 {
+        width: 15.3em;
+        margin-left: -10em; 
+        margin-top: -3em;
+
+    }
+
+    .credico-section p {
+        margin-left: -13%;
+    }
+
+    main section:nth-child(3) {
+        position: relative; bottom: 30%;
+
+    }
+
+    #skills-section{
+        width: 90%;
+        font-size: 1.3em;
+        margin-left: 10%;
+        
+    }
+    main {
+        margin-bottom: -20%;
+    }
+
+    footer h2 {
+        width: 17em;
+        margin-left: 20%;
+    }
+
+    .contacts-section{
+        font-size: 1.4em;
+        margin-top: -5%;
+    }
+
+    form {
+        font-size: 1.7em;
+        margin-top: -20%;
+    }
+
+    textarea, label, input, select, button{
+        font-size: 0.8em;
+        margin-right:10em ;
     }
 
  
 
 
+}
+
+@media only screen and (min-width:1520px) {
+    header div:nth-child(2) {
+        margin-top: -2em;
+    }
+
+    #education-section {
+        margin-top: 10em;
+    }
+
+    .codespace-section p {
+        position: relative;right: 13em;
+
+    }
+}
+
+@media only screen and (min-width:1620px) {
+
+    img{
+        width: 35em;
+        height: 60em;
+        margin-top: 43em;
+        position: relative; right: 3em;
+    }
+
+    header div:first-of-type{
+        height: 40em;
+    }
+
+    header h1 {
+       font-size: 12em;
+       margin-top: 0.3em;
+    }
+
+    header p:first-of-type {
+        font-size: 5.1em;
+    }
+
+    header p:nth-child(2) {
+        width: 45em;
+        font-size: 0.8em;
+    }
+
+    .kliptown-section h3 {
+        position: relative; left:1em;
+        width: 20em;
+        z-index: -1; 
+    }
+
+    .codespace-section p {
+        position: relative; right: 13em;
+        
+    }
+    
+
+
+}
+
+@media only screen and ( min-width:1928px) {
+    img{
+        width:45em;
+        height: 70em;
+    }
+
+    header p:nth-child(2){
+        font-size: 1.3em;
+        width: 30em;
+    }
+
+    header p:first-of-type{
+        font-size: 5.6em;
+    }
+
+    #education-section h2{
+        font-size: 6em;
+    }
+
+    .kliptown-section h3 {
+        font-size: 3em;
+        margin-left: -1.3em;
+    }
+
+    .kliptown-section p {
+        font-size:2em ;
+        margin-left: 6em;
+    }
+
+    .simplilearn-section h3 {
+        font-size: 3em;
+        padding-left: 5em;
+    }
+
+    .simplilearn-section p {
+        font-size: 2em;
+    }
+
+    .codespace-section h3 {
+        font-size: 3em;
+        margin-top: 0.22em;
+        width: 15em;
+        margin-left: 22em;
+    }
+
+    .codespace-section p {
+        font-size: 2.2em;
+        position: relative; right: 8.4em;
+    }
+
+    #experience-section h2{
+        font-size: 6em;
+        width: 9em;
+        padding-left: 1em;
+    }
+
+    .jetline-section h3 {
+        font-size: 2.2em;
+        margin-left: 3.5em;
+    }
+
+    .jetline-section p {
+        margin-top: 1em;
+        font-size:1.7em ;
+    }
+
+    .credico-section p {
+        font-size:1.7em ;
+    }
+
+    .credico-section h3 {
+        font-size: 2.2em;
+        margin-left: -8em;
+    }
+
+    #skills-section h2 {
+        font-size: 5em;
+        width: 9.5em;
+    }
+
+    #skills-section li {
+        font-size: 1.5em ;
+    }
+
+    footer h2 {
+        font-size: 5em;
+        margin-left: 3.5em;
+    }
+}
+
+@media only screen and (min-width:2028px) {
+    img {
+        width:50em
+    }
+
+    #education-section h2{
+        font-size: 6em;
+    }
+
+    #experience-section h2 {
+        width: 10em;
+        font-size: 7em;
+    }
+
+    #skills-section h2{
+        border-radius: 50px;
+        font-size: 6em;
+        width: 8.3em;
+    }
+
+    footer h2 {
+        font-size: 6em;
+        width: 14em;
+    }
+
+    textarea, label, input, select, button {
+        font-size: 1em;
+        
+    }
+    form {
+        position: relative; right:9em;
+    }
+
+    footer div:first-of-type {
+        font-size: 1.5em;
+        margin-left: 5em;
+    }
+
+}
+
+@media only screen and (min-width:2184px) {
+    header p:first-of-type{
+        margin-left: -0.6em;
+        font-size: 6.4em;
+    }
+
+    header p:nth-child(2) {
+        width: 35em;
+        position: relative;left: 1.7em;
+        margin-bottom: 2em;
+    }
+    img {
+        height: 76em;
+    }
+
+    #education-section h2 {
+        font-size: 7em;
+    }
+
+    .kliptown-section h3 {
+        margin-top: -3em;
+    }
+
+    .kliptown-section p {
+        margin-left: 2.5em;
+    }
+
+    .codespace-section h3 {
+        margin-left: 23em;
+    }
+
+    .codespace-section p {
+        margin-left: -2.5em;
+    }
+
+    
+
+    #skills-section h2 {
+        margin-left: 8em;
+        width: 7.69em;
+    }
+
+    #skills-section li {
+       margin-left: 4em;
+    }
+
+    .jetline-section h3 {
+        margin-left: 4.7em;
+    }
+
+    footer h2 {
+        width: 19em;
+        margin-left: 2em;
+    }
+
+    textarea, label, input, select, button {
+        font-size: 0.7em;
+    }
+
 
 
 
 
 }
+
+@media only screen and (min-width:2225px) {
+
+    header div:first-of-type{
+
+        height: 50em;
+    
+    }
+    img {
+        margin-top: 55em;
+        height: 80em;
+        width: 55em;
+    }
+
+    #skills-section h2 {
+        margin-left: 8.3em;
+        border-radius: 50px;
+    }
+
+
+}
+
+@media only screen and (min-width:2352px) {
+    #skills-section h2 {
+        margin-left: 8.67em;
+        font-size: 6.2em;
+    }
+
+    #experience-section h2 {
+        font-size: 7.5em;
+    }
+
+    footer h2 {
+        margin-left: 2.8em;
+    }
+    
+    .codespace-section h3 {
+        margin-left: 24.7em;
+    }
+
+    .jetline-section h3 {
+        font-size: 2.5em;
+    }
+
+    .credico-section h3 {
+        font-size: 2.5em;
+        margin-left: -7.3em;
+    }
+
+}
+
+@media only screen and (min-width:2440px) {
+    header p:nth-child(2){
+    margin-left: 2em;
+    }
+
+    .codespace-section h3 {
+        width: 23em;
+
+    }
+
+    #skills-section h2 {
+        margin-left: 9.3em;
+    }
+
+    .jetline-section p {
+        font-size: 2em;
+    }
+
+    .credico-section p {
+        font-size: 2em;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:2500px) {
+
+    header div:first-of-type {
+        height: 60em;
+    }
+
+    header p:first-of-type{
+        font-size:8em;
+        margin-left: 0.1em;
+    }
+
+    header p:nth-child(2){
+        font-size: 1.7em;
+        width: 34em;
+        margin-left: 1em;
+        
+    }
+
+    img {
+        margin-left: 60em;
+        width: 60em;
+        height: 110em;
+    }
+
+    #skills-section h2 {
+        border-radius: 50PX;
+        width: 8em;
+        margin-left: 7.8em;
+    }
+
+    #experience-section h2 {
+        font-size: 8em;
+    }
+
+    footer h2 {
+        font-size: 7em;
+        margin-left: 2em;
+    }
+
+    textarea, label, input, select, button {
+        font-size: 1em;
+    }
+
+
+
+
+
+}
+
+
+
