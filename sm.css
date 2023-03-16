@@ -708,11 +708,15 @@ button {
 
     .codespace-section h3 {
         z-index: -1;
-        position: relative;right: 10.3em; top: 1.7em;
+        position: relative;right: 9.8em; top: 1.7em;
     }
 
     .codespace-section {
         margin-top: -14em;
+    }
+
+    .codespace-section p {
+        position: relative; right: 18%;
     }
 
     #experience-section {
@@ -785,6 +789,7 @@ button {
 
 
 }
+
 @media only screen and (min-width:1520px) {
     header div:nth-child(2) {
         margin-top: -2em;
@@ -792,6 +797,11 @@ button {
 
     #education-section {
         margin-top: 10em;
+    }
+
+    .codespace-section p {
+        position: relative;right: 13em;
+
     }
 }
 
@@ -942,6 +952,7 @@ button {
     }
 
     #skills-section h2{
+        border-radius: 50px;
         font-size: 6em;
         width: 8.3em;
     }
@@ -1046,6 +1057,7 @@ button {
 
     #skills-section h2 {
         margin-left: 8.3em;
+        border-radius: 50px;
     }
 
 
@@ -1065,5 +1077,96 @@ button {
         margin-left: 2.8em;
     }
     
+    .codespace-section h3 {
+        margin-left: 24.7em;
+    }
+
+    .jetline-section h3 {
+        font-size: 2.5em;
+    }
+
+    .credico-section h3 {
+        font-size: 2.5em;
+        margin-left: -7.3em;
+    }
 
 }
+
+@media only screen and (min-width:2440px) {
+    header p:nth-child(2){
+    margin-left: 2em;
+    }
+
+    .codespace-section h3 {
+        width: 23em;
+
+    }
+
+    #skills-section h2 {
+        margin-left: 9.3em;
+    }
+
+    .jetline-section p {
+        font-size: 2em;
+    }
+
+    .credico-section p {
+        font-size: 2em;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:2500px) {
+
+    header div:first-of-type {
+        height: 60em;
+    }
+
+    header p:first-of-type{
+        font-size:8em;
+        margin-left: 0.1em;
+    }
+
+    header p:nth-child(2){
+        font-size: 1.7em;
+        width: 34em;
+        margin-left: 1em;
+        
+    }
+
+    img {
+        margin-left: 60em;
+        width: 60em;
+        height: 110em;
+    }
+
+    #skills-section h2 {
+        border-radius: 50PX;
+        width: 8em;
+        margin-left: 7.8em;
+    }
+
+    #experience-section h2 {
+        font-size: 8em;
+    }
+
+    footer h2 {
+        font-size: 7em;
+        margin-left: 2em;
+    }
+
+    textarea, label, input, select, button {
+        font-size: 1em;
+    }
+
+
+
+
+
+}
+
+
+
