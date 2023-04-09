@@ -11,17 +11,28 @@
 }
 
 img {
-    height: 20em;
+    height: 18em;
     border-radius: 100%;
     border-width: 5px;
     border-color: rgba(0, 0, 255, 0.436);
     border-style: solid;
+    position: relative; left: 42%; top: -60%; bottom: 60%;
 }
 
 header {
     background-image: url('Images/banner7\,1.jpg');
     margin: 2%;
     background-color: rgba(128, 128, 128, 0.132);
+}
+
+h1 {
+    color: rgb(69, 66, 66);
+    font-size: 500%;
+    margin-bottom: 0%;
+}
+
+.ditjoe{
+    color: blue;
 }
 
 h3 {
