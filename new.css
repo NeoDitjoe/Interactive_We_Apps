@@ -6,7 +6,7 @@
     border: solid;
     display: grid;
     grid-template-columns: 27% 52% 21%;
-    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif/* 'Segoe UI', Tahoma, Verdana, sans-serif */;
     background-color: rgba(128, 128, 128, 0.132);
 }
 
@@ -16,13 +16,15 @@ img {
     border-width: 5px;
     border-color: rgba(0, 0, 255, 0.436);
     border-style: solid;
-    position: relative; left: 42%; top: -60%; bottom: 60%;
+    position: relative; left: 42%; 
+    margin-top: 8%;
 }
 
 header {
     background-image: url('Images/banner7\,1.jpg');
     margin: 2%;
     background-color: rgba(128, 128, 128, 0.132);
+    
 }
 
 h1 {
@@ -46,11 +48,37 @@ h2 {
     text-align: center;
 }
 
+.p1, .p2 {
+    width: 95%;
+    padding-left: 5%;
+}
+
+#web {
+    font-size: 400%;
+    margin: 0%;
+    text-align: center;
+    color: blue;
+    font-family:fantasy ;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+section {
+    margin-left: 10%;
+}
+
 footer {
     width: 75%;
     margin-left: 15%;
 }
 
-section {
-    margin-left: 10%;
+form {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+button {
+    background-color: rgba(0, 0, 255, 0.356);
+    width: 50%;    
 }
