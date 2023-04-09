@@ -9,7 +9,7 @@ footer.classList.add('highlight');
 
 setTimeout(function() {
   footer.classList.remove('highlight');
-}, 500);
+}, 300);
 }
 
 
