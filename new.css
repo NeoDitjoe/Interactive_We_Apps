@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+#container {
+    border: solid;
+    display: grid;
+    grid-template-columns: 27.4% 49% 13.6%;
+    grid-gap: 3%;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: rgba(128, 128, 128, 0.132);
+}
+
+img {
+    height: 20em;
+    border-radius: 100%;
+    border-width: 5px;
+    border-color: rgba(0, 0, 255, 0.436);
+    border-style: solid;
+}
+
+.blue {
+    background-image: url('Images/banner7\,1.jpg');
+}
+
+h3 {
+    padding-left: 2%;
+    color: white;
+    background-color:  gainsboro;
+}
+
+h2 {
+    background-color:  gainsboro;
+    text-align: center;
+}
+
+footer {
+    width: 115%;
+    margin-right: 10%;
+}
+
+section {
+    width: 95%;
+}
