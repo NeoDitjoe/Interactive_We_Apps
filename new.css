@@ -5,8 +5,7 @@
 #container {
     border: solid;
     display: grid;
-    grid-template-columns: 27.4% 49% 13.6%;
-    grid-gap: 3%;
+    grid-template-columns: 27% 52% 21%;
     font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
     background-color: rgba(128, 128, 128, 0.132);
 }
@@ -19,8 +18,10 @@ img {
     border-style: solid;
 }
 
-.blue {
+header {
     background-image: url('Images/banner7\,1.jpg');
+    margin: 2%;
+    background-color: rgba(128, 128, 128, 0.132);
 }
 
 h3 {
@@ -35,10 +36,10 @@ h2 {
 }
 
 footer {
-    width: 115%;
-    margin-right: 10%;
+    width: 75%;
+    margin-left: 15%;
 }
 
 section {
-    width: 95%;
+    margin-left: 10%;
 }
