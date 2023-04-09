@@ -10,49 +10,73 @@
 <body>
 
     <nav>
-        <ul>
+        <ul>         
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experince</a></li>
             <li><a href="#skills">Skills</a> </li>
             <li><a href="#contact">Contact Details</a> </li>
+        </ul> 
+        <ul>
+            <li><a href="http://127.0.0.1:5501/resume8.html">preModel</a> </li>
+            <li>  <select onchange="color(this.value)">
+                <option value="">color</option>
+                <option value=" rgba(255, 0, 0, 0.237)">red</option>
+                <option value="rgba(0, 0, 255, 0.279)">blue</option>
+                <option value="rgba(135, 207, 235, 0.338)">skyBlue</option>
+                <option value="white">white</option>
+                <option value="rgba(128, 0, 128, 0.461)">purple</option>
+                <option value="rgba(128, 128, 128, 0.516)">gray</option>
+                <option value="rgba(0, 250, 0, 0.183)">green</option>
+                <option value="rgba(255, 255, 0, 0.425)">yellow</option>
+            </select> </li>
         </ul>
 
     </nav>
 
     <header>
         <div>
-            <h1><aside>Neo</aside><aside>Ditjoe</aside></h1>
+            <h1><aside>Neo</aside><aside id="ditjoe">Ditjoe</aside></h1>
             <img src="src/images/top.jpeg" alt="profile photo">
         </div>
         
         <div>
-            
             <p>WEB DEVELOPER</p>
-            <p> As a highly motivated and skilled individual, I am excited to submit my resume for your consideration. As a Sofware Engineer student, I have proven track record of designing and developing responsive and user-friendly websites that deliver exceptional user experience. Whether working independently or as a team, I am committed to delivering high quality solutions that meet unique needs and goals of each project. I am eager to contribute my expertise and work collaboratively with a dynamic team to drive meaningful impact and achieve common goals.</p>
+         <!--    <select onchange="color(this.value)">
+                <option value="">color</option>
+                <option value="rgba(255, 0, 0, 0.37)">red</option>
+                <option value="rgba(0, 0, 255, 0.279)">blue</option>
+                <option value="rgba(135, 207, 235, 0.525)">skyBlue</option>
+                <option value="white">white</option>
+                <option value="rgba(128, 0, 128, 0.461)">purple</option>
+                <option value="rgba(128, 128, 128, 0.516)">gray</option>
+                <option value="rgba(0, 250, 0, 0.575)">green</option>
+                <option value="rgba(255, 255, 0, 0.425)">yellow</option>
+            </select>   -->
+            <p>As a highly motivated and skilled individual, I am excited to submit my resume for your consideration. As a Sofware Engineer student, I have proven track record of designing and developing responsive and user-friendly websites that deliver exceptional user experience. Whether working independently or as a team, I am committed to delivering high quality solutions that meet unique needs and goals of each project. I am eager to contribute my expertise and work collaboratively with a dynamic team to drive meaningful impact and achieve common goals.</p>
 
         </div>
 
     </header>
 
-    <main>
+    <main> <!--got 3 section-->
 
         <section id="education-section">
-            <h2 id="education">EDUCATION</h2>
+            <h2 id="education">EDUCATION</h2><!--3 divs-->
 
                 <div class="kliptown-section">
-                    <h3>Kliptown Seconday</h3>
+                    <h3 id="kliptown">Kliptown Seconday</h3>
                     <p>National Senior Certificate<br>2019</p>
                     
                 </div>
 
                 <div class="simplilearn-section">
-                    <h3>SimpliLearn</h3>
+                    <h3 id="simplilearn">SimpliLearn</h3>
                     <p>Business Analyritics Certicate <br> 09/22</p>
                     
 
                 </div>
                 <div class="codespace-section">
-                    <h3>CodeSpace Academy</h3>
+                    <h3 id="codespace">CodeSpace Academy</h3>
                     
                     <p>Fundamentals of Coding Certificate<br>11/22</p>
 
@@ -63,13 +87,13 @@
         <section id="experience-section">
             <h2 id="experience">EXPERIENCE</h2>
             <div  class="jetline-section">
-                <h3>Jetline</h3>
+                <h3 id="jetline">Jetline</h3>
                <p>Position: Finisher<br>02/21 - 09/21</p>
 
             </div>
 
             <div class="credico-section">
-                <h3>Credico</h3>
+                <h3 id="credico">Credico</h3>
                 <p>Position: Field Agent<br>01/22 - 03/22</p>
 
             </div>
@@ -78,7 +102,7 @@
         </section>
 
         <section id="skills-section">
-            <h2 id="skills">SKILLS</h2>
+            <h2 id="skills" id="skillgray">SKILLS</h2>
             <p>
                 <ul>           
                     <li>HTML</li>
@@ -136,7 +160,7 @@
 
         
     </footer>
-
+<script src="index.js"></script>
 
 
 </body>

@@ -1,0 +1,750 @@
+* {
+  
+}
+
+#container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;   
+      
+}
+
+
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(128, 128, 128, 0.132);
+    border: solid;
+   
+
+}
+
+.blue { 
+    background-image: url('Images/banner7\,1.jpg');
+    margin: 5px;
+    width: 390px;
+    position: relative; right: 45px;
+    height: 750px;
+
+} 
+
+.blues {
+    position: relative; bottom: 200px; left: 200px;
+}
+
+h1 {
+    color: rgb(69, 66, 66);
+    position: relative; top: 500px; right: 55px;
+    font-size: 80px;
+}
+
+.ditjoe{
+    color: blue;
+    position: relative; right: 37px;
+}
+
+
+
+img {
+    width: 275px;
+    height: 275px;
+    border-radius: 200px;
+    border-width: 5px;
+    border-color: rgba(0, 0, 255, 0.436);
+    border-style: solid;
+    position: relative; bottom: 80px; right: 30px;    
+}
+
+.links {
+    position: relative; bottom: 50px;
+}
+
+a {
+    color: blue;
+}
+
+h2 {
+    background-color:  gainsboro;
+    width: 700px;
+    text-align: center;
+    
+    
+
+}
+
+.h22 {
+    background-color: gainsboro; width: 230px;
+}
+
+.row2 {
+
+    position: relative; right: 100px;
+    text-align: centr;
+}
+
+h3 {
+    padding-left: 10px;
+    color: white;
+    background-color:  gainsboro;
+}
+
+p{
+    position: relative; left:4% ;
+    max-width: 40em;
+
+}
+
+.Q2 {
+    background-color: gainsboro; position: relative; left: 23px; margin-right: 20.4px; 
+}
+
+.row3{
+
+    width: 29.8px;
+    position: relative; right: 170px;
+    
+}
+
+.intro {
+    position: relative; top: 450px; left: -109px; color: white;
+}
+
+button{
+    background-color: rgba(0, 0, 255, 0.526);
+}
+
+.forms {
+    background-color: gainsboro; width: 230px;
+
+} 
+
+.details{
+    position: relative; top: 235px;
+}
+
+/* @media only screen and (min-width:305px) and (max-width:370px){
+
+    #container {
+        transform: scale(0.40);
+        position: relative; left: 7.7%; top: 13.3%;
+    }
+ 
+    body {
+        height: 1893px;
+    }
+
+    .blue{
+        background-size: cover;
+        background-position-y: 39.1%;
+        height:750px;
+        padding-right: 320px;
+        position: relative;left: 310px; bottom: 3100px;
+      
+
+    }
+
+    h1 {
+        transform: scale(0.74);
+        font-size: 109px;
+        position: relative; top: 240px; left: 220px
+    }
+
+    img{
+        width: 380px;
+        height: 380px;
+        position: relative;bottom: 310px; right: 180px;
+    }
+    
+    .links{
+        position: relative; bottom: 420px; left: 10px;
+        font-size: 250%;
+    }
+
+    .intro {
+        position: relative; top: 170px; color: white;
+        font-size: 30px;
+        white-space: nowrap;
+        transform: scale(1.3);
+    }
+    .row2{
+        font-size: 250%;
+        position: relative; right: 400px; bottom: 2365px;
+    }
+
+    .row3 {
+        font-size: 220%;
+        position: relative; right: 1100px; top: 910px;
+        
+    }
+    .details {
+        position: relative;left: 340px;
+    }
+
+    .linked {
+        position: relative; bottom: 578px;
+
+    }
+
+    .forms {
+        position: relative; bottom: 580px; right:40px ;
+        white-space: nowrap;
+        background-color: gainsboro;width: 400px;
+        
+    }
+
+
+    .email {
+        font-size: 40px;
+        position: relative; right: 40px; bottom: 620px;
+    }
+
+    input , select , button, textarea {
+        font-size: 30px;
+    }
+
+    .Q2 {
+        background-color: gainsboro; position: relative; left: 0px; margin-right: 0px; 
+    }
+
+}  
+
+@media only screen and (min-width:365px) and (max-width:411px){
+    
+    body {
+        height: 700px;
+    }
+
+    .blue{
+        height:250px;
+        padding-right: 230px;
+        position: relative;left: 365px; bottom: 15px;
+        transform: scale(0.9);
+
+    }
+
+    h1 {
+        font-size: 50px;
+        position: relative; top: 202px; left: 40px
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+        position: relative;bottom: 25px; right: 180px;
+    }
+    
+    .links{
+        position: relative; bottom: 237.9px;
+    }
+
+    .intro {
+        position: relative; top: 170px; left: 5px; color: white;
+        font-size: 10px;
+    }
+    .row2{
+        transform: scale(0.5);
+        position: relative; right: 185px; top: 31px;
+    }
+
+    .row3 {
+        transform: scale(0.5);
+        position: relative; right: 715px; top: 400px;
+        
+    }
+    .details {
+        position: relative;left: 240px;
+    }
+
+    .linked {
+        position: relative; bottom: 390px;
+
+    }
+
+    .forms {
+        position: relative; bottom: 395px;
+        
+    }
+
+
+    .email {
+        position: relative;left: 270px; bottom: 511.5px;
+    }
+
+    .Q2 {
+        background-color: gainsboro; position: relative; left: 0px; margin-right: 0px; 
+    }
+
+    
+    
+
+}  
+
+@media only screen and (min-width:411px) and (max-width:490px){
+
+    .blue{
+        height:250px;
+        padding-right: 230px;
+        position: relative;left: 365px;
+        background-position-y: 37%;
+
+    }
+
+    h1 {
+        font-size: 50px;
+        position: relative; top: 202px; left: 40px
+    }
+
+    img{
+        width: 150px;
+        height: 150px;
+        position: relative;bottom: 25px; right: 180px;
+    }
+    
+    .links{
+        position: relative; bottom: 237.9px;
+    }
+
+    .intro {
+        position: relative; top: 170px; left: 5px; color: white;
+        font-size: 10px;
+    }
+    .row2{
+        font-size: 180%;
+        transform: scale(0.55);
+        position: relative; right: 185px; bottom:197px;
+    }
+
+    .row3 {
+        font-size: 123%;
+        transform: scale(0.55);
+        position: relative; right: 735px; top: 907px;
+        
+    }
+    .details {
+        position: relative;left: 240px; 
+    }
+
+    .linked {
+        position: relative; bottom: 428.3px;
+
+    }
+
+    .forms {
+        position: relative; bottom: 428.3px;
+        
+    }
+
+
+    .email {
+        position: relative;left: 270px; bottom: 571px;
+    }
+
+    .Q2 {
+        background-color: gainsboro; position: relative; left: 0px; margin-right: 0px; 
+    }
+
+    body {
+        height: 1500px;
+    }
+
+    p {
+        max-width: 22em;
+    }
+
+
+}
+
+@media only screen and (min-width:738px) and (max-width:1000px){
+
+
+    .blue{
+        height:265px;
+        padding-right: 600px;
+        position: relative;left: 365px;
+        
+        background-image: url(Images/banner1.jpg);
+
+        width: 140px;
+       
+
+    }
+
+    h1 {
+        font-size: 50px;
+        position: relative; top: 160px; left: 300px
+    }
+
+    img{
+        border-color: rgba(226, 226, 26, 0.948);
+        width: 150px;
+        height: 150px;
+        position: relative;bottom: 25px; right: 180px;
+    }
+
+
+    .links{
+        position: relative; bottom: 237.9px;
+        color: white;
+    }
+
+    .ditjoe {
+        color:  rgba(226, 226, 26, 0.948);
+        position: relative; left: 1px; 
+    }
+
+    .intro {
+        
+        position: relative; top: 170px; left: 260px; color: white;
+        font-size:13px;
+        white-space:nowrap;
+    }
+    .row2{
+      
+        transform: scale(1);
+        position: relative; right: 363px; top: 265px;
+    }
+
+    
+
+    .row3 {
+        transform: scale();
+        position: relative; right: 1064px; top: 1010px;
+        
+    }
+    .details {
+        position: relative;left: 240px;
+    }
+
+    .linked {
+        position: relative; bottom: 390px; 
+        font-size: 15px;
+
+    }
+
+    .forms {
+        position: relative; bottom: 395px;
+        
+    }
+
+
+    .email {
+        position: relative;left: 270px; bottom: 512px;
+    }
+
+    .Q2 {
+        background-color: gainsboro; position: relative; left: 0px; margin-right: 0px; 
+    }
+
+    body {
+        height: 1220px;    
+    }
+
+ 
+
+    a {
+        color: rgba(226, 226, 26, 0.948);
+    }
+    
+
+}  
+
+@media only screen and  (min-width:1024px) and (max-width:1030px){
+    .row3{
+        position: relative;top: 800px;
+    }
+
+    .row2{
+        position: relative; right: 20px;
+    }
+
+    .blue{
+        position: relative; right: 0;
+        background-size: cover;
+    }
+    img {
+        position: relative; right: 170px; top: 1px;
+        width: 200px;
+        height: 200px;
+    }
+
+    h1{
+        font-size: 50px;
+        position: relative; top: 420px; right: 115px;
+    }
+
+    .intro {
+        position: relative; top: 375px; left: -190px;
+    }
+
+    .links {
+        position: relative;top: 10px;
+    }
+
+    .row2 {
+        position: relative; left: 16px;
+    }
+
+    .row3 {
+        position: relative; right:968px; top: 750px;
+    }
+
+    .details {
+        position: relative; left: 380px; top: -158.8px;
+    }
+
+    .email {
+        position: relative; left: 390px; top: -110px;
+    }
+
+    .Q2 {
+        background-color: gainsboro; position: relative; left: 0px; margin-right: 0px; 
+    }
+
+    body {
+        height: 960px;
+
+    }
+
+}
+
+@media only screen and (min-width:1410px) and (max-width:1441px){
+    .Q2 {
+        
+        background-color: gainsboro; position: relative; left: 0px; margin-right: 0px; 
+    }
+
+    h3 {
+        padding-left: 4%;
+    }
+
+    img {
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width:2510px){
+    .blue { 
+        background-image: url('Images/banner7\,1.jpg');
+        background-size: cover;
+        margin: 5px;
+        width: 800px;
+        position: relative; right: 100px;
+        height: 1601px;
+    
+    }
+
+    img{
+        position: absolute;
+        z-index: 1;
+        width: 600px;
+        height: 600px;
+        border-radius: 100%;
+        border-width: 13px;
+        position: relative;bottom: 470px; left: 40px;
+    }
+
+    h1 {
+        font-size: 150px;
+        position: relative; top: 770px;
+    }
+
+    .intro {
+        font-size: 35px;
+        
+        position: relative;
+        top: 640px; left: -150px;
+    }
+
+    .links {
+        font-size: 35px;
+        position: relative; left: 37px;
+    }
+
+    .row2 {
+        transform:scale(1.2);
+        position: relative; top: 160px; right: 190px;
+               
+    }
+    p{
+        font-size: 25px;
+    }
+    h2 , h3 {
+        font-size: 40px;
+    }
+
+    h2 {
+        width: 1046px;
+    }
+
+    .h22 {
+        width: 350px;
+    }
+
+    ul{
+        font-size: 25px;
+    }
+
+    .row3{
+           
+        position: relative; right: 260px; top: 7px;
+    }
+    .email {
+        font-size: 30px
+    }
+
+    .details{
+        position: relative;top: 217px;
+        
+
+    }
+
+    .form {
+        font-size: 27px;
+    }
+
+    .forms{
+        width: 340px;
+    }
+    
+   .body {
+      margin-right: 100px;
+      
+   }
+
+   .sk2 {
+    font-size: 32px;
+
+   }
+
+   .linked {
+    font-size: 32px;
+   }
+
+   .Q2 {
+    background-color: gainsboro; position: relative; left: 0px; margin-right: 0px; 
+   }  
+
+  
+
+     @keyframes fall
+      {
+        from{
+            transform: translatex(2000px);
+        }
+
+        to{
+            transform: translateX(0);
+        }
+    }
+
+    .j2 {
+        animation-name: fall;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0.3s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+
+        transform: translateY(0px);
+     }
+
+     .j1 {
+        animation-name: fall;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0.6s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+     }
+
+     .p2 {
+        animation-name: fall;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-delay: 0.8s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+     }
+
+     .p1 {
+        animation-name: fall;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in;
+        animation-delay: 1s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+     }
+
+     @keyframes slideinleft {
+        from{
+            transform: translatey(-2600px);
+        }
+
+
+        to{
+            transform: translatey(0);
+        }
+        
+    }
+
+    .blue {
+        animation-name: slideinleft;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: none;
+
+     }
+
+     @keyframes h {
+        from{
+            transform: translatex(-2500px);
+        }
+
+        to{
+            transform: translatex(0)
+        }
+     }
+
+     h2 , h3 {
+
+        animation-name: h;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-delay: 0.2;
+        animation-iteration-count: 1;
+     }
+
+     @keyframes right {
+        from {
+            transform: translatey(-2500);
+        }
+
+        to{
+            transform: translatey(0);
+        }
+     }
+
+     .sk2 {
+        animation-name: right;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+     }
+
+
+
+
+ 
+
+
+
+
+} */
